@@ -1,0 +1,26 @@
+SQL> SELECT
+  2     s.student_name,
+  3     s.contact,
+  4     a.country,
+  5     a.province,
+  6     a.city,
+  7     a.street,
+  8     a.house
+  9     FROM student s JOIN address a
+ 10     ON
+ 11     (s.address=a.address_id);
+
+STUDENT_NAME                      CONTACT COUNTRY                   PROVINCE                  CITY                      STREET                    HOUSE                                                                                                                                                                                                                                                                                                                                                             
+------------------------------ ---------- ------------------------- ------------------------- ------------------------- ------------------------- -------------------------                                                                                                                                                                                                                                                                                                                                         
+John Doe                       9876548756 Nepal                     3                         Koteshwor                 Kotdevi                   11                                                                                                                                                                                                                                                                                                                                                                
+Peter Parker                   9856874533 Nepal                     3                         Koteshwor                 Kotdevi                   11                                                                                                                                                                                                                                                                                                                                                                
+Dom Mann                       9867675454 Nepal                     3                         Patan                     111                       90/2                                                                                                                                                                                                                                                                                                                                                              
+George Guy                     8976543255 Nepal                     3                         Changunrayan              Changu                    100                                                                                                                                                                                                                                                                                                                                                               
+Freddy Day                     3622486537 Nepal                     1                         Patan                     44                        1                                                                                                                                                                                                                                                                                                                                                                 
+Barry Berry                    9877665544 Nepal                     3                         Baneshwor                 Old Street                355                                                                                                                                                                                                                                                                                                                                                               
+Lisa Mona                      2222386746 Nepal                     3                         Baneshwor                 Old Street                355                                                                                                                                                                                                                                                                                                                                                               
+john Smith                     8997657876 Nepal                     3                         Koteshwor                 Dronacharya               11                                                                                                                                                                                                                                                                                                                                                                
+
+8 rows selected.
+
+SQL> spool off

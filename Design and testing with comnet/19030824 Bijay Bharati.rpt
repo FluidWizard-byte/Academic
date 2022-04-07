@@ -1,0 +1,122 @@
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     1
+
+                             19030824 Bijay Bharati                             
+
+                         NODES: RECEIVED MESSAGE COUNTS                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+      RECEIVER            COUNT                   MESSAGE NAME
+______________________  __________  _________________________________________
+
+Edinburg.ATM Server          342    Butwal ATM MSG REQ                       
+Edinburg.ATM Server          339    Ithari ATM MSG REQ                       
+Edinburg.ATM Server            1    Butwal Teller MSG REQ                    
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     2
+
+                             19030824 Bijay Bharati                             
+
+                           LINKS: CHANNEL UTILIZATION                           
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+                             FRAMES           TRANSMISSION DELAY (MS)       %
+LINK                   DELIVERED RST/ERR  AVERAGE    STD DEV    MAXIMUM   UTIL
+_____________________  _________ ______  _________  _________  _________  _____
+
+Edinburg.Edinburg Link      7249      0      0.036      0.011      0.082 0.4294
+Butwal.Butwal Link          5904      0      0.067      0.023      0.491 0.6530
+Ithari.Ithari Link          5891      0      0.067      0.023      0.538 0.6510
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     3
+
+                             19030824 Bijay Bharati                             
+
+                         WAN CLOUDS: FRAME DELAY BY VC                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                      FRAME DELAY (MS)               BURST SIZE (kb)
+  VC                      AVG      STD      MAX           AVG           MAX
+______________________  _______  _______  _______    ____________  ____________
+
+WAN Cloud
+  Ithari - London            47       17      100               8            17
+  London- Ithari             39        0       39               4             9
+  Butwal - London            48       17      101               8            17
+  London - Butwal            39        0       39               4            10
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     4
+
+                             19030824 Bijay Bharati                             
+
+                         WAN CLOUDS: FRAME COUNTS BY VC                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                                    FRAMES / KILOBITS
+  VC:  FRAMES                    ACCEPTED                     DROPPED
+       KILOBITS            NORMAL          DE           NORMAL          DE
+______________________  ____________  ____________   ____________  ____________
+
+WAN Cloud               (TOTAL KILOBITS TRANSMITTED =         2309 )
+  Ithari - London  Frm          1790            31              0             0
+                    kb           771            14              0             0
+  London- Ithari   Frm          1154             0              0             0
+                    kb           369             0              0             0
+  Butwal - London  Frm          1768            37              0             0
+                    kb           769            17              0             0
+  London - Butwal  Frm          1151             0              0             0
+                    kb           368             0              0             0
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     5
+
+                             19030824 Bijay Bharati                             
+
+                         WAN CLOUDS: ACCESS LINK STATS                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                            FRAMES            BUFFER (BYTES)       % UTIL
+  ACCESS LINK  (ENTRY)     ACCEPTED    DROPPED    MAX     AVG     STD          
+               (EXIT)                                                          
+________________________  __________  _________  ______  ______  ______  ______
+
+WAN Cloud
+  Ithari Access Li Entry        1821          0    N/A     N/A     N/A   100.00
+                    Exit        1154          0      40       3      10    6.25
+  Butwal Access Li Entry        1805          0    N/A     N/A     N/A    99.99
+                    Exit        1151          0      40       2      10    6.23
+  London Access Li Entry        2306          0    N/A     N/A     N/A    99.93
+                    Exit        3626          0     268      18      38   24.99
+
+
+Compuware COMNET III  Release 2.5.2.814  Wed Dec 23 17:04:33 2020   PAGE     6
+
+                            19030824 Bijay Bharati                             
+
+                   MESSAGE + RESPONSE SOURCES: MESSAGE DELAY                    
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Edinburg.ATM Server / src ATM Server RESP:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+Butwal.Butwal ATM / src Butwal ATM MSG REQ:
+  Edinburg.ATM Server          55   30783.413 MS  15901.603 MS  58057.378 MS
+Butwal.Butwal Teller / src Butwal Teller MSG REQ:
+  Edinburg.ATM Server           1   21207.504 MS      0.000 MS  21207.504 MS
+Ithari.Ithari ATM / src Ithari ATM MSG REQ:
+  Edinburg.ATM Server          50   30700.619 MS  15634.861 MS  57552.484 MS
+Ithari.Ithari Teller / src Ithari Teller MSG REQ:
+  Edinburg.ATM Server           0       0.000 MS      0.000 MS      0.000 MS
+

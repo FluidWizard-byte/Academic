@@ -1,0 +1,7 @@
+Name          : Neymar da Silva Santos Júnior
+Nationality   : Brazillian
+DOB           : February 5, 1992 
+Height        : 1.75 m (5 ft 9 in)
+Position      : Forward
+Current Teams : Paris Saint-Germain
+		Brazil

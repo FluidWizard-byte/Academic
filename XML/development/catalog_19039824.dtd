@@ -1,0 +1,75 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT BlackRecords (StoreName,Telephone+,website,Logo,Address+,Album+)>
+<!ATTLIST BlackRecords xmlns:xsi CDATA #REQUIRED xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+
+<!ELEMENT StoreName (#PCDATA)>
+
+
+<!ELEMENT Telephone (#PCDATA)>
+<!ATTLIST Telephone phoneType (Ncell|Ntc) #REQUIRED>
+
+<!ELEMENT website (#PCDATA)>
+
+<!ELEMENT Logo (#PCDATA)>
+
+
+<!ELEMENT Address (Country,City,Street?,HouseNo?)>
+<!ATTLIST Address addressType (Owned|Rental) #REQUIRED>
+
+<!ELEMENT Album (AlbumName,Producer+,Genres+,Artists,Recorded?,Released,Song+)>
+<!ATTLIST Album albumID ID #REQUIRED>
+
+<!ELEMENT Country (#PCDATA)>
+
+
+<!ELEMENT City (#PCDATA)>
+
+
+<!ELEMENT Street (#PCDATA)>
+
+
+<!ELEMENT HouseNo (#PCDATA)>
+
+
+<!ELEMENT AlbumName (#PCDATA)>
+
+
+<!ELEMENT Producer (#PCDATA)>
+
+
+<!ELEMENT Genres (#PCDATA)>
+
+
+<!ELEMENT Artists (#PCDATA)>
+<!ATTLIST Artists artistType (Band|Single) #REQUIRED>
+
+<!ELEMENT Recorded (#PCDATA)>
+
+
+<!ELEMENT Released (Year,(Month,Day)?)>
+
+<!ELEMENT Song (SongName,Awards*,Length,Writer+,Rating)>
+<!ATTLIST Song songID ID #REQUIRED track (A|B) #IMPLIED>
+
+<!ELEMENT Year (#PCDATA)>
+
+
+<!ELEMENT Month (#PCDATA)>
+
+
+<!ELEMENT Day (#PCDATA)>
+
+
+<!ELEMENT SongName (#PCDATA)>
+
+
+<!ELEMENT Awards (#PCDATA)>
+
+
+<!ELEMENT Length (#PCDATA)>
+
+
+<!ELEMENT Writer (#PCDATA)>
+
+<!ELEMENT Rating (#PCDATA)>

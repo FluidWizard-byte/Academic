@@ -1,0 +1,32 @@
+Customer_Type,Ticket_Category,Ticket_Price,Group_Size,Adults,Children,Date,Day,Entry,Exit
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,3:37 PM,6:00 PM
+Group,1hr,3094,7,4,3,31/Dec/2021,Friday,3:39 PM,6:00 PM
+Individual-Adult,3hr,1500,1,1,0,31/Dec/2021,Friday,4:24 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,31/Dec/2021,Friday,5:53 PM,6:00 PM
+Individual-Child,4hr,1450,1,0,1,01/Jan/2022,Saturday,12:29 PM,6:00 PM
+Group,3hr,19966.5,18,9,9,01/Jan/2022,Saturday,12:29 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,12:30 PM,1:30 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,12:32 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,12:33 PM,1:33 PM
+Individual-Adult,4hr,2100,1,1,0,01/Jan/2022,Saturday,12:34 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,12:35 PM,1:35 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,4:35 PM,5:35 PM
+Individual-Adult,4hr,2100,1,1,0,01/Jan/2022,Saturday,4:35 PM,8:35 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,4:39 PM,6:00 PM
+Individual-Adult,4hr,2100,1,1,0,01/Jan/2022,Saturday,4:40 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,4:46 PM,5:46 PM
+Individual-Adult,4hr,2100,1,1,0,01/Jan/2022,Saturday,4:47 PM,6:00 PM
+Group,3hr,52200,55,5,50,01/Jan/2022,Saturday,5:48 PM,6:00 PM
+Individual-Adult,4hr,2100,1,1,0,01/Jan/2022,Saturday,5:51 PM,6:00 PM
+Individual-Child,2hr,700,1,0,1,01/Jan/2022,Saturday,5:58 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,5:26 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,01/Jan/2022,Saturday,5:40 PM,6:00 PM
+Individual-Adult,1hr,550,1,1,0,02/Mar/2022,Wednesday,10:11 AM,11:11 AM
+Individual-Adult,3hr,1500,1,1,0,02/Mar/2022,Wednesday,10:11 AM,1:11 PM
+Individual-Adult,Whole Day,2700,1,1,0,02/Mar/2022,Wednesday,10:11 AM,6:00 PM

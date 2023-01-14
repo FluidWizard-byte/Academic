@@ -1,0 +1,7 @@
+Name          : Lionel Andrés Messi
+Nationality   : Argentine
+DOB           : 24 June 1987
+Height        : 1.70m (5 ft 7 in)
+Position      : Forward
+Current Teams : FC Barcelona
+		Argentina national football team

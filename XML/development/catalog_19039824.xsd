@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BlackRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="StoreName"/>
+        <xs:element name="Telephone" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:long">
+                <xs:attribute type="xs:string" name="phoneType" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="website"/>
+        <xs:element type="xs:string" name="Logo"/>
+        <xs:element name="Address" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Country"/>
+              <xs:element type="xs:string" name="City"/>
+              <xs:element type="xs:string" name="Street" minOccurs="0"/>
+              <xs:element type="xs:byte" name="HouseNo" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="addressType" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Album" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="AlbumName"/>
+              <xs:element type="xs:string" name="Producer" maxOccurs="unbounded" minOccurs="1"/>
+              <xs:element type="xs:string" name="Genres" maxOccurs="unbounded" minOccurs="1"/>
+              <xs:element name="Artists">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="artistType" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="Recorded" minOccurs="0"/>
+              <xs:element name="Released">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="Year"/>
+                    <xs:element type="xs:string" name="Month" minOccurs="0"/>
+                    <xs:element type="xs:byte" name="Day" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Song" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="SongName"/>
+                    <xs:element type="xs:string" name="Awards" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element type="xs:string" name="Length"/>
+                    <xs:element type="xs:string" name="Writer" maxOccurs="unbounded" minOccurs="1"/>
+                    <xs:element type="xs:byte" name="Rating"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="songID" use="required"/>
+                  <xs:attribute type="xs:string" name="track" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="albumID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

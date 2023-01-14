@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="catalog_19030824.css"?>
+
+<!DOCTYPE BlackRecords SYSTEM "catalog_19039824.dtd">
+
+<BlackRecords xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19039824.xsd">
+
+    <StoreName>Black Records Music Store</StoreName>
+
+    <Telephone phoneType="Ncell">9809909090</Telephone>
+    <Telephone phoneType="Ntc">9809009090</Telephone>
+
+    <website>https://www.brecords.com</website>
+    <Logo>Black Records</Logo>
+
+    <Address addressType="Owned">
+        <Country>Nepal</Country>
+        <City>Koteshwor</City>
+        <Street>Drow</Street>
+        <HouseNo>11</HouseNo>
+    </Address>
+
+    <Address addressType="Rental">
+        <Country>Nepal</Country>
+        <City>Bhaktapur</City>
+    </Address>
+
+    <Album albumID="A100">
+        <AlbumName>Highway to Hell</AlbumName>
+        <Producer>Robert John "Mutt" Lange</Producer>
+        <Genres>Hard rock</Genres>
+        <Artists artistType="Band">AC/DC</Artists>
+        <Recorded>1979</Recorded>
+        <Released>
+            <Year>1979</Year>
+            <Month>July</Month>
+            <Day>27</Day>
+        </Released>
+        <Song songID="S001" track="A">
+            <SongName>Highway to Hell</SongName>
+            <Awards>Most Played Australian Work Overseas</Awards>
+            <Length>3:29</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>9</Rating>
+        </Song>
+        <Song songID="S002" track="A">
+            <SongName>Girls Got Rhythm</SongName>
+            <Length>3:24</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S003" track="A">
+            <SongName>Touch Too Much</SongName>
+            <Length>4:28</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>7</Rating>
+        </Song>
+        <Song songID="S004" track="B">
+            <SongName>Shot Down in Flames</SongName>
+            <Length>3:23</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S005" track="B">
+            <SongName>Night Prowler</SongName>
+            <Length>6:18</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+    </Album>
+
+    <Album albumID="A200">
+        <AlbumName>Back in Black</AlbumName>
+        <Producer>Robert John "Mutt" Lange</Producer>
+        <Genres>Hard rock</Genres>
+        <Genres>Heavy metal</Genres>
+        <Artists artistType="Band">AC/DC</Artists>
+        <Recorded>1980</Recorded>
+        <Released>
+            <Year>1985</Year>
+            <Month>July</Month>
+            <Day>25</Day>
+        </Released>
+        <Song songID="S006" track="A">
+            <SongName>Hells Bell</SongName>
+            <Length>5:12</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S007" track="A">
+            <SongName>Shoot to Thrill</SongName>
+            <Length>5:17</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S008" track="A">
+            <SongName>Given the Dog a Bone</SongName>
+            <Length>3:30</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S009" track="B">
+            <SongName>Back in Black</SongName>
+            <Length>4:14</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S010" track="B">
+            <SongName>You Shook Me All Night Long</SongName>
+            <Length>3:30</Length>
+            <Writer>Angus Young</Writer>
+            <Writer>Malcolm Young</Writer>
+            <Writer>Brian Johnson</Writer>
+            <Rating>8</Rating>
+        </Song>
+    </Album>
+
+    <Album albumID="A300">
+        <AlbumName>Thriller</AlbumName>
+        <Producer>Quincy Jones</Producer>
+        <Genres>Pop</Genres>
+        <Genres>Post disco</Genres>
+        <Genres>Funk</Genres>
+        <Artists artistType="Single"> Michael Jackson</Artists>
+        <Released>
+            <Year>1982</Year>
+            <Month>November</Month>
+            <Day>30</Day>
+        </Released>
+        <Song songID="S011" track="A">
+            <SongName>Wanna Be Startin' Somethin</SongName>
+            <Length>6:02</Length>
+            <Writer>Michael Jackson</Writer>
+            <Rating>8</Rating>
+        </Song>
+        <Song songID="S012" track="A">
+            <SongName>Thriller</SongName>
+            <Awards>Grammy Award for Best Music Video</Awards>
+            <Awards>MTV Video Music Award for Best Art Direction</Awards>
+            <Length>5:57</Length>
+            <Writer>Temperton</Writer>
+            <Rating>9</Rating>
+        </Song>
+        <Song songID="S013" track="B">
+            <SongName>Beat It</SongName>
+            <Length>4:18</Length>
+            <Writer>Michael Jackson</Writer>
+            <Rating>9</Rating>
+        </Song>
+        <Song songID="S014" track="B">
+            <SongName>Beat It</SongName>
+            <Awards>American Music Award for Favorite Soul/R&amp;B Video</Awards>
+            <Awards>American Music Award for Favorite Pop/Rock Video</Awards>
+            <Length>4:18</Length>
+            <Writer>Michael Jackson</Writer>
+            <Rating>9</Rating>
+        </Song>
+    </Album>
+
+    <Album albumID="A400">
+        <AlbumName>Nevermind</AlbumName>
+        <Producer>Butch Vig</Producer>
+        <Producer>Nirvana</Producer>
+        <Genres>Grunge</Genres>
+        <Genres>Alternative rock</Genres>
+        <Artists artistType="Band">Nirvana</Artists>
+        <Recorded>1990</Recorded>
+        <Released>
+            <Year>1991</Year>
+        </Released>
+        <Song songID="S015">
+            <SongName>Smells Like Teen Spirit</SongName>
+            <Awards>MTV Video Music Award for Best New Artist</Awards>
+            <Awards>NME Award for Best Single Ever</Awards>
+            <Length>5:01</Length>
+            <Writer>Kurt Cobain</Writer>
+            <Writer>Krist Novoselic</Writer>
+            <Writer>Dave Grohl</Writer>
+            <Rating>9</Rating>
+        </Song>
+        <Song songID="S016">
+            <SongName>In Bloom</SongName>
+            <Awards>MTV Video Music Award for Best Alternative Video</Awards>
+            <Length>4:14</Length>
+            <Writer>Kurt Cobain</Writer>
+            <Rating>9</Rating>
+        </Song>
+        <Song songID="S017">
+            <SongName>Breed</SongName>
+            <Awards>MTV Video Music Award for Best Alternative Video</Awards>
+            <Length>3:03</Length>
+            <Writer>Kurt Cobain</Writer>
+            <Rating>7</Rating>
+        </Song>
+        <Song songID="S018">
+            <SongName>Coms as You Are</SongName>
+            <Length>3:39</Length>
+            <Writer>Kurt Cobain</Writer>
+            <Rating>8</Rating>
+        </Song>
+    </Album>
+</BlackRecords>

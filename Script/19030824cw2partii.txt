@@ -1,0 +1,210 @@
+#!/bin/bash
+
+# checking if 2 arguments are passed, if the 2 arguments are passed, the program continues
+# it is assumed that name and id can be string 
+# in echo command \n is for new line, \t is for tab and  \e[numberm is used for text color
+
+
+if [ $# = 2 ]; then
+
+
+# validation for program name, program name can only contain alphabets
+
+    while ! [[ $programName =~ ^[Aa-Zz]+$ ]]; do
+        echo -e "\nEnter the name you would like to give this program: \c"
+        read programName
+        if ! [[ $programName =~ ^[Aa-Zz]+$ ]]; then
+            echo -e "\e[93mMake sure the name you entered does not contain spaces, numbers or special characters\e[39m"
+        fi
+    done
+
+# assigning values for different variables
+# secret is the password
+# attempts is to keep track of how many times wrong secret has been entered
+# entry is for allowing the program to continue
+
+    secret="a"
+    attempts=0
+    entry=0
+
+
+# user will be asked to enter secret until it is correct, user has 4 tries
+
+    while [ $attempts -lt 4 ]; do
+        echo -e "\nWhat is the secret?"
+        read input
+
+        if [ "$input" = "$secret" ]; then
+
+            entry=1
+            break
+
+        else
+
+            attempts=$(expr $attempts + 1)
+            echo -e "failure, attempts remaining: \e[91m$(expr 4 - $attempts)\e[39m"
+
+        fi
+    done
+
+# when user enters correct secret, entry=1 so that program continues
+
+    if [ $entry == 1 ]; then
+        echo -e "\n______________________________________________________________________"
+        echo -e "\n Welcome to \e[96m$programName\e[39m"
+        echo -e "\n You are \e[92m$1\e[39m"
+        echo -e "\n Your ID is \e[92m$2\e[39m"
+        echo -e "\n This message was displayed on: \e[92m$(date)\e[39m"
+        echo -e "\n_______________________________________________________________________"
+
+
+# this is to keep the program in loop
+
+        while true; do
+            echo -e "\n Now, you must guess which team is the best football team."
+
+            echo -e "\n_______________________________________________________________________\n"
+            echo -e "\t\t\tBRZ   Brazil"
+            echo -e "\t\t\tARG   Argentina"
+            echo -e "\t\t\tNEP   Nepal"
+            echo -e "\t\t\tCHI   China"
+            echo -e "\t\t\tENG   England"
+            echo -e "\n_______________________________________________________________________\n"
+
+
+# it is assumed Brazil is best team, so it will ask user for best tem until code for Brazil BRZ is entered
+
+            until [[ ${countryCode^^} = "BRZ" ]]; do
+                echo -e "Give country code: \c"
+                read countryCode
+
+# converting entered countru code to upper case for comparision
+
+                countryC=${countryCode^^}
+
+# checking if country code is among the valid codes
+
+                if ! [[ $countryC =~ ^(BRZ|ARG|NEP|CHI|ENG)$ ]]; then
+                    echo -e "\n\e[91mInvalid country code typed\e[39m\n"
+
+# checking if country code is BRZ of not 
+
+                elif [[ $countryC =~ ^(ARG|NEP|CHI|ENG)$ ]]; then
+                    echo -e "\n\e[93mGuess Again, this is not the best football team\e[39m\n"
+
+# when country code is BRZ
+
+                else
+                    echo -e "\n\e[92mCongratulations you selected the best football team\e[39m\n"
+                    echo -e "\n______________________________________________________________________"
+                    echo -e "\nBrazil is the top football team in the world.\nThe top players in the world have been from Brazil.\nBrazil has won the football world cup 5 times."
+                    echo -e "\n______________________________________________________________________"
+                fi
+            done
+
+# selection for players
+
+            echo -e "\nNow, select any 3 players"
+
+            echo -e "\n______________________________________________________________________\n"
+            echo -e "\t\t\tLM  Lionel Messi"
+            echo -e "\t\t\tNJ  Neymar Junior"
+            echo -e "\t\t\tKC  Kiran Chemjong"
+            echo -e "\t\t\tZZ  Zeng Zhi"
+            echo -e "\t\t\tHK  Harry Kane"
+            echo -e "\n______________________________________________________________________\n"
+
+            echo -e "Enter the player codes seperated by spaces"
+
+
+# 3 inputs are taken for player
+
+            while [ playerCount != 3 ]; do
+                echo -e "\nEnter 3 player codes: \c"
+                read p01 p02 p03
+                p1=${p01^^}
+                p2=${p02^^}
+                p3=${p03^^}
+                players=($p1 $p2 $p3)
+                playerCount=${#players[@]}
+
+# validations for proper player code and repeating codes
+
+                if ! [[ $playerCount == 3 ]]; then
+		    echo -e "\n\e[93mPlease enter 3 player codes\e[39m\n"
+		elif ! [[ $p1 =~ ^(LM|NJ|KC|ZZ|HK) ]]; then
+                    echo -e "\n\e[91mOne or more invalid player codes entered\e[39m\n"
+                elif ! [[ $p2 =~ ^(LM|NJ|KC|ZZ|HK) ]]; then
+                    echo -e "\n\e[91mOne or more invalid player codes entered\e[39m\n"
+                elif ! [[ $p3 =~ ^(LM|NJ|KC|ZZ|HK) ]]; then
+                    echo -e "\n\e[91mOne or more invalid player codes entered\e[39m\n"
+                elif [[ "$p1" = "$p2" ]] || [[ "$p1" = "$p3" ]] || [[ "$p2" == "$p3" ]]; then
+                    echo -e "\n\e[93mPlayer codes repeated\e[39m\n"
+                else
+                    echo -e "\n\e[92mThank you for selecting three players\e[39m\n"
+                    break
+                fi
+            done
+            echo -e "\n_______________________________________________________________________\n"
+
+            echo -e "\nChoose the player you would like to know more about\n"
+
+# asking to choose 1 player to know more about, the players p1, p2 and p3 are taken from above 
+
+            PS3="Enter number (1-3): "
+            select player in $p1 $p2 $p3; do
+                if [[ -z "$player" ]]; then
+                    echo -e "\n\e[93mInvalid choice, try again\e[39m\n"
+                else
+
+# the file is checked if it exists and is readable
+# the file name is same as player code and the value of player code is used to find the file
+
+                    echo -e "\n\e[92myou choose $player\n\e[39m"
+                    echo -e "\nThe player details from the player's file is printed below\n"
+                    if ! [ -f $player ]; then
+                        echo -e "\n\e[91mError: File not found\e[39m\n"
+                    elif ! [ -r $player ]; then
+                        echo -e "\n\e[91mError: File not readable\e[39m\n"
+                    else
+                        echo -e "\n______________________________________________________________________\n"
+                        echo "$(cat $player)"
+                        echo -e "\n______________________________________________________________________\n"
+                    fi
+                    break
+                fi
+            done
+
+# loop to repeat program, if y is typed, program repeats, else it exits
+
+            echo -e "\nPress Y if you want to continue: \c"
+            read option
+            if [[ $option = "Y" ]] || [[ $option = "y" ]]; then
+                echo -e "\n\e[96mThe Program Repeats\e[39m"
+
+                countryCode=''
+            else
+                echo -e "\n\e[96mThe program has been stopped\e[39m"
+                break
+            fi
+        done
+
+# message for failed attempts
+
+    else
+        echo -e "\n\e[91mToo many failed attempts, you may not enter\e[39m"
+
+    fi
+
+# message for improper name, id
+
+
+else
+
+    echo -e "\n\e[93mMake sure that you enter name and ID properly\e[39m \n"
+    echo -e "Here is an example: bash cw2 \e[92m\"Jon Doe\" 1290312\e[39m\n"
+
+fi
+
+
+
